@@ -65,6 +65,7 @@
             this.hScrollBar_Genre.Name = "hScrollBar_Genre";
             this.hScrollBar_Genre.Size = new System.Drawing.Size(159, 17);
             this.hScrollBar_Genre.TabIndex = 9;
+            this.hScrollBar_Genre.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Genre_Scroll);
             // 
             // listBox_Playlist
             // 

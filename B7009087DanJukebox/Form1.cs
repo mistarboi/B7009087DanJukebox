@@ -31,5 +31,14 @@ namespace B7009087DanJukebox
             //string[0].Items.Add("Introduction.wma");
             //repeat for each string-array instance and their respective files
         }
+
+        private void hScrollBar_Genre_Scroll(object sender, ScrollEventArgs e)
+        {
+            // *** Pseudo Code ***
+            // int representing position of hscrollbar (1 to 3)
+            // click right arrow = ++, left arrow = --
+            // int above paired with corresponding variable for listbox
+            // ie: hscrollbar = 1, listbox displayed = 1
+        }
     }
 }
