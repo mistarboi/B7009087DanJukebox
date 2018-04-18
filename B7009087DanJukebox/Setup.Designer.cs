@@ -224,6 +224,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Setup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setup";
             this.ResumeLayout(false);
             this.PerformLayout();
