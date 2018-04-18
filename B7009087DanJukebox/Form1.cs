@@ -46,5 +46,11 @@ namespace B7009087DanJukebox
             var newForm = new Setup(); //Generates popup of Setup tab
             newForm.Show(); //Displays Setup
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var newForm = new About(); //Generates popup of About tab
+            newForm.Show(); // Displays About tab
+        }
     }
 }
