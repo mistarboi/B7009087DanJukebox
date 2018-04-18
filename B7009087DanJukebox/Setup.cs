@@ -16,5 +16,10 @@ namespace B7009087DanJukebox
         {
             InitializeComponent();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Closes Setup on click of cancel button
+        }
     }
 }
