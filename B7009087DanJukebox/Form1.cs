@@ -26,6 +26,10 @@ namespace B7009087DanJukebox
             string GenreName = media_content_read.ReadLine();
             listBox_Genre_List.Items.Add(GenreName);
             string[] input = new string[3];
+            //Pseudo code ***
+            //string[0] = new ListBox();
+            //string[0].Items.Add("Introduction.wma");
+            //repeat for each string-array instance and their respective files
         }
     }
 }
