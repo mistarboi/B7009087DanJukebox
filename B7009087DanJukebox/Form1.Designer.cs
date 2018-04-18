@@ -29,7 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.textBox_Copyright = new System.Windows.Forms.TextBox();
+            this.listBox_Genre_Title = new System.Windows.Forms.ListBox();
+            this.hScrollBar_Genre = new System.Windows.Forms.HScrollBar();
+            this.listBox_Playlist = new System.Windows.Forms.ListBox();
+            this.textBox_Now_Playing = new System.Windows.Forms.TextBox();
+            this.listBox_Genre_List = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // textBox_Copyright
+            // 
+            this.textBox_Copyright.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Copyright.Location = new System.Drawing.Point(265, 3);
+            this.textBox_Copyright.Name = "textBox_Copyright";
+            this.textBox_Copyright.Size = new System.Drawing.Size(163, 13);
+            this.textBox_Copyright.TabIndex = 1;
+            this.textBox_Copyright.Text = "Copyright (C) 2018 Daniel Bowns";
+            // 
+            // listBox_Genre_Title
+            // 
+            this.listBox_Genre_Title.Location = new System.Drawing.Point(131, 72);
+            this.listBox_Genre_Title.Name = "listBox_Genre_Title";
+            this.listBox_Genre_Title.Size = new System.Drawing.Size(159, 17);
+            this.listBox_Genre_Title.TabIndex = 4;
+            // 
+            // hScrollBar_Genre
+            // 
+            this.hScrollBar_Genre.LargeChange = 4;
+            this.hScrollBar_Genre.Location = new System.Drawing.Point(131, 163);
+            this.hScrollBar_Genre.Maximum = 3;
+            this.hScrollBar_Genre.Name = "hScrollBar_Genre";
+            this.hScrollBar_Genre.Size = new System.Drawing.Size(159, 17);
+            this.hScrollBar_Genre.TabIndex = 9;
+            // 
+            // listBox_Playlist
+            // 
+            this.listBox_Playlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.listBox_Playlist.Location = new System.Drawing.Point(159, 209);
+            this.listBox_Playlist.Name = "listBox_Playlist";
+            this.listBox_Playlist.Size = new System.Drawing.Size(106, 95);
+            this.listBox_Playlist.TabIndex = 8;
+            // 
+            // textBox_Now_Playing
+            // 
+            this.textBox_Now_Playing.BackColor = System.Drawing.Color.Fuchsia;
+            this.textBox_Now_Playing.Location = new System.Drawing.Point(131, 183);
+            this.textBox_Now_Playing.Name = "textBox_Now_Playing";
+            this.textBox_Now_Playing.ReadOnly = true;
+            this.textBox_Now_Playing.Size = new System.Drawing.Size(159, 20);
+            this.textBox_Now_Playing.TabIndex = 7;
+            // 
+            // listBox_Genre_List
+            // 
+            this.listBox_Genre_List.Location = new System.Drawing.Point(131, 95);
+            this.listBox_Genre_List.Name = "listBox_Genre_List";
+            this.listBox_Genre_List.Size = new System.Drawing.Size(159, 69);
+            this.listBox_Genre_List.TabIndex = 6;
             // 
             // Form1
             // 
@@ -38,14 +93,28 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(430, 390);
+            this.Controls.Add(this.hScrollBar_Genre);
+            this.Controls.Add(this.listBox_Playlist);
+            this.Controls.Add(this.textBox_Now_Playing);
+            this.Controls.Add(this.listBox_Genre_List);
+            this.Controls.Add(this.listBox_Genre_Title);
+            this.Controls.Add(this.textBox_Copyright);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox_Copyright;
+        private System.Windows.Forms.ListBox listBox_Genre_Title;
+        private System.Windows.Forms.HScrollBar hScrollBar_Genre;
+        private System.Windows.Forms.ListBox listBox_Playlist;
+        private System.Windows.Forms.TextBox textBox_Now_Playing;
+        private System.Windows.Forms.ListBox listBox_Genre_List;
     }
 }
 
