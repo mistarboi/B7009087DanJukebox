@@ -221,6 +221,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Setup";
             this.Text = "Setup";
             this.ResumeLayout(false);

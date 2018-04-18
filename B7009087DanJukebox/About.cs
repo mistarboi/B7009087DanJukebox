@@ -16,5 +16,10 @@ namespace B7009087DanJukebox
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Closes About on click on OK button
+        }
     }
 }
