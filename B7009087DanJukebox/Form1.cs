@@ -52,5 +52,15 @@ namespace B7009087DanJukebox
             var newForm = new About(); //Generates popup of About tab
             newForm.Show(); // Displays About tab
         }
+
+        private void listBox_Genre_List_DoubleClick(object sender, EventArgs e)
+        {
+            //Pseudo code ***
+            //if track double clicked and not currently playing a song
+            //listBox_Now_Playing.Items.Add("x.wma/.mp3") -> x being the chosen song
+            //system.Media.SoundPlayer = new system.Media.SoundPlayer()
+            //else listBox_Playlist.Items.Add("x.wma/.mp3")
+            //
+        }
     }
 }

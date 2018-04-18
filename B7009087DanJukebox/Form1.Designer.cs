@@ -90,6 +90,7 @@
             this.listBox_Genre_List.Name = "listBox_Genre_List";
             this.listBox_Genre_List.Size = new System.Drawing.Size(159, 69);
             this.listBox_Genre_List.TabIndex = 6;
+            this.listBox_Genre_List.DoubleClick += new System.EventHandler(this.listBox_Genre_List_DoubleClick);
             // 
             // menuStrip1
             // 
