@@ -40,5 +40,11 @@ namespace B7009087DanJukebox
             // int above paired with corresponding variable for listbox
             // ie: hscrollbar = 1, listbox displayed = 1
         }
+
+        private void setupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var newForm = new Setup(); //Generates popup of Setup tab
+            newForm.Show(); //Displays Setup
+        }
     }
 }
