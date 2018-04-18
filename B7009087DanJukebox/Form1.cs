@@ -17,5 +17,15 @@ namespace B7009087DanJukebox
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            String track_dir = Directory.GetCurrentDirectory() + "\\Tracks\\"; //Locates Tracks folder, stores in variable
+            String media_dir = Directory.GetCurrentDirectory() + "\\Media\\"; //Locates Media folder, stores in variable
+            StreamReader media_content_read = File.OpenText(media_dir + "Media.txt"); //Reads content of Media.txt file previously located
+            string GenreName = media_content_read.ReadLine();
+            listBox_Genre_List.Items.Add(GenreName);
+            string[] input = new string[3];
+        }
     }
 }
